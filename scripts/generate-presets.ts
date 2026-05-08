@@ -15,8 +15,8 @@ type PresetsFile = {
 };
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const templatePath = join(repoRoot, "modulo-room-lights.yml");
-const presetsPath = join(repoRoot, "presets.yml");
+const templatePath = join(repoRoot, "modulo-room-lights.yaml");
+const presetsPath = join(repoRoot, "presets.yaml");
 const distDir = join(repoRoot, "dist");
 
 function assertPreset(value: unknown, index: number): asserts value is Preset {
@@ -51,7 +51,7 @@ function parsePresets(source: string): Preset[] {
   const parsed = parse(source) as Partial<PresetsFile>;
 
   if (!Array.isArray(parsed.presets)) {
-    throw new Error("presets.yml must contain a presets array");
+    throw new Error("presets.yaml must contain a presets array");
   }
 
   parsed.presets.forEach(assertPreset);
@@ -64,7 +64,7 @@ function uniqueFileName(name: string, seen: Map<string, number>): string {
   const count = seen.get(slug) ?? 0;
   seen.set(slug, count + 1);
 
-  return count === 0 ? `${slug}.yml` : `${slug}-${count + 1}.yml`;
+  return count === 0 ? `${slug}.yaml` : `${slug}-${count + 1}.yaml`;
 }
 
 function renameKeyDeep(node: unknown, from: string, to: string): void {
