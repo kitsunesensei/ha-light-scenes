@@ -15,7 +15,7 @@
     "build": "npx tsx scripts/generate-presets.ts"
   },
   "lint-staged": {
-    "*.{json,js,ts,jsx,tsx,md,yml,yaml}": [
+    "*.{json,js,ts,jsx,tsx,md,yaml}": [
       "prettier --write"
     ]
   },
