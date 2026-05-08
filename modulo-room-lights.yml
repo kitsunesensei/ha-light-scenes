@@ -1,0 +1,129 @@
+blueprint:
+  name: Modulo Room Light Colors
+  description: >-
+    Sets all target lights to the same brightness and cycles through active RGB colors by modulo:
+    light 1 -> color 1, light 2 -> color 2, ... light N -> color (N mod number of colors).
+    Black ([0, 0, 0]) marks unused color slots and is ignored. If all color slots are black,
+    lights are turned on with brightness only.
+  domain: script
+  input:
+    target_lights:
+      name: Target (lights / devices / areas)
+      description: Entities, devices, or areas to control.
+      selector:
+        target:
+          entity:
+            domain: light
+    brightness:
+      name: Brightness
+      description: Shared brightness value for all lights.
+      default: 60
+      selector:
+        number:
+          min: 1
+          max: 100
+          step: 1
+          unit_of_measurement: "%"
+          mode: slider
+    color_1:
+      name: Color 1
+      default: [0, 0, 0]
+      selector:
+        color_rgb:
+    color_2:
+      name: Color 2
+      default: [0, 0, 0]
+      selector:
+        color_rgb:
+    color_3:
+      name: Color 3
+      default: [0, 0, 0]
+      selector:
+        color_rgb:
+    color_4:
+      name: Color 4
+      default: [0, 0, 0]
+      selector:
+        color_rgb:
+    color_5:
+      name: Color 5
+      default: [0, 0, 0]
+      selector:
+        color_rgb:
+    color_6:
+      name: Color 6
+      default: [0, 0, 0]
+      selector:
+        color_rgb:
+
+mode: single
+sequence:
+  - variables:
+      target: !input target_lights
+      brightness: !input brightness
+      color_slots:
+        - !input color_1
+        - !input color_2
+        - !input color_3
+        - !input color_4
+        - !input color_5
+        - !input color_6
+      colors: >
+        {{ color_slots | reject('equalto', [0, 0, 0]) | list }}
+      light_targets: >
+        {% set ns = namespace(
+          lights=[],
+          entity_ids=target.entity_id | default([]),
+          device_ids=target.device_id | default([]),
+          area_ids=target.area_id | default([])
+        ) %}
+        {% if ns.entity_ids is string %}
+          {% set ns.entity_ids = [ns.entity_ids] %}
+        {% endif %}
+        {% if ns.device_ids is string %}
+          {% set ns.device_ids = [ns.device_ids] %}
+        {% endif %}
+        {% if ns.area_ids is string %}
+          {% set ns.area_ids = [ns.area_ids] %}
+        {% endif %}
+        {% for entity_id in ns.entity_ids %}
+          {% if entity_id.startswith('light.') %}
+            {% set ns.lights = ns.lights + [entity_id] %}
+          {% endif %}
+        {% endfor %}
+        {% for device_id in ns.device_ids %}
+          {% for entity_id in device_entities(device_id) %}
+            {% if entity_id.startswith('light.') %}
+              {% set ns.lights = ns.lights + [entity_id] %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        {% for area_id in ns.area_ids %}
+          {% for entity_id in area_entities(area_id) %}
+            {% if entity_id.startswith('light.') %}
+              {% set ns.lights = ns.lights + [entity_id] %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        {{ ns.lights | unique | list }}
+  - repeat:
+      for_each: "{{ light_targets }}"
+      sequence:
+        - choose:
+            - conditions:
+                - "{{ colors | length > 0 }}"
+              sequence:
+                - variables:
+                    selected_color: "{{ colors[((repeat.index | int) - 1) % (colors | length)] }}"
+                - service: light.turn_on
+                  target:
+                    entity_id: "{{ repeat.item }}"
+                  data:
+                    brightness_pct: "{{ brightness }}"
+                    rgb_color: "{{ selected_color }}"
+          default:
+            - service: light.turn_on
+              target:
+                entity_id: "{{ repeat.item }}"
+              data:
+                brightness_pct: "{{ brightness }}"
