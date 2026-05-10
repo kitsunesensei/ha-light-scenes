@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Unwind</title>
+  <desc id="desc">Preset artwork using the Unwind color palette.</desc>
+  
+  <defs>
+    <linearGradient id="bg-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6000"/><stop offset="25%" stop-color="#ff9523"/><stop offset="50%" stop-color="#ff7600"/><stop offset="75%" stop-color="#ff8700"/><stop offset="100%" stop-color="#f89e3d"/>
+    </linearGradient>
+    <radialGradient id="glow-main" cx="78%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#ffb473" stop-opacity=".72"/>
+      <stop offset="62%" stop-color="#ff9523" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#ff6000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-main" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="320" height="180" rx="22" fill="url(#bg-main)"/>
+  <rect width="320" height="180" rx="22" fill="url(#glow-main)"/>
+  <rect x="10" y="10" width="300" height="160" rx="17" fill="none" stroke="#f8fbff" stroke-opacity=".18" stroke-width="2"/>
+  
+  <ellipse cx="160" cy="103" rx="76" ry="54" fill="#c74b00" opacity=".42" filter="url(#soft-main)"/>
+  <path d="M112 118 C114 82 134 62 160 62 C186 62 206 82 208 118 Z" fill="#ff9d35" opacity=".85"/>
+  <path d="M130 118 C132 93 144 79 160 79 C176 79 188 93 190 118 Z" fill="#ff7600" opacity=".8"/>
+  <rect x="103" y="118" width="114" height="10" rx="5" fill="#d16f00"/>
+  <path d="M120 132 C146 147 176 147 202 132" fill="none" stroke="#f9ad5a" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+  <circle cx="160" cy="93" r="15" fill="#ffc98c" opacity=".55"/>
+</svg>

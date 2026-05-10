@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Honolulu</title>
+  <desc id="desc">Preset artwork using the Honolulu color palette.</desc>
+  
+  <defs>
+    <linearGradient id="bg-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff0030"/><stop offset="25%" stop-color="#ff3d40"/><stop offset="50%" stop-color="#ff6f00"/><stop offset="75%" stop-color="#e39936"/><stop offset="100%" stop-color="#ff582a"/>
+    </linearGradient>
+    <radialGradient id="glow-main" cx="78%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#ffb073" stop-opacity=".72"/>
+      <stop offset="62%" stop-color="#ff3d40" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#ff0030" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-main" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="320" height="180" rx="22" fill="url(#bg-main)"/>
+  <rect width="320" height="180" rx="22" fill="url(#glow-main)"/>
+  <rect x="10" y="10" width="300" height="160" rx="17" fill="none" stroke="#f8fbff" stroke-opacity=".18" stroke-width="2"/>
+  
+  <circle cx="251" cy="48" r="26" fill="#edbc7a" opacity=".78"/>
+  <path d="M0 112 C42 91 72 131 118 109 C169 84 202 119 248 100 C286 84 305 92 320 104 L320 180 L0 180 Z" fill="#d60028" opacity=".55"/>
+  <path d="M0 132 C53 111 83 151 133 130 C178 111 209 139 252 122 C284 109 302 113 320 124 L320 180 L0 180 Z" fill="#ff3d40" opacity=".64"/>
+  <path d="M0 153 C54 131 84 170 134 149 C183 128 211 158 261 139 C288 129 306 132 320 141 L320 180 L0 180 Z" fill="#ff801f" opacity=".76"/>
+  <path d="M46 123 C80 112 96 145 134 130 M174 145 C207 132 230 153 272 139" fill="none" stroke="#ff977b" stroke-width="5" stroke-linecap="round" opacity=".62"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Valley dawn</title>
+  <desc id="desc">Preset artwork using the Valley dawn color palette.</desc>
+  
+  <defs>
+    <linearGradient id="bg-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00adff"/><stop offset="25%" stop-color="#ff9b3b"/><stop offset="50%" stop-color="#ffa4ab"/><stop offset="75%" stop-color="#73a7ff"/><stop offset="100%" stop-color="#ff9240"/>
+    </linearGradient>
+    <radialGradient id="glow-main" cx="78%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#ffcdd1" stop-opacity=".72"/>
+      <stop offset="62%" stop-color="#ff9b3b" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#00adff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-main" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="320" height="180" rx="22" fill="url(#bg-main)"/>
+  <rect width="320" height="180" rx="22" fill="url(#glow-main)"/>
+  <rect x="10" y="10" width="300" height="160" rx="17" fill="none" stroke="#f8fbff" stroke-opacity=".18" stroke-width="2"/>
+  
+  <circle cx="252" cy="54" r="26" fill="#a5c7ff" opacity=".82"/>
+  <path d="M0 124 L76 64 L132 126 L184 54 L320 132 L320 180 L0 180 Z" fill="#008ed1" opacity=".75"/>
+  <path d="M0 145 C55 119 98 133 142 112 C194 88 233 126 320 93 L320 180 L0 180 Z" fill="#ff9b3b" opacity=".64"/>
+  <path d="M0 160 C64 137 110 158 164 136 C216 115 260 141 320 123 L320 180 L0 180 Z" fill="#e09096" opacity=".72"/>
+  <path d="M184 54 L156 98 L206 94 Z" fill="#ffc9a0" opacity=".52"/>
+</svg>
