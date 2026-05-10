@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Winter mountain</title>
+  <desc id="desc">Preset artwork using the Winter mountain color palette.</desc>
+  
+  <defs>
+    <linearGradient id="bg-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbf6fb"/><stop offset="25%" stop-color="#8ceeff"/><stop offset="50%" stop-color="#93efff"/><stop offset="75%" stop-color="#bcf4ff"/><stop offset="100%" stop-color="#72eaff"/>
+    </linearGradient>
+    <radialGradient id="glow-main" cx="78%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#c4f6ff" stop-opacity=".72"/>
+      <stop offset="62%" stop-color="#8ceeff" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#dbf6fb" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-main" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="320" height="180" rx="22" fill="url(#bg-main)"/>
+  <rect width="320" height="180" rx="22" fill="url(#glow-main)"/>
+  <rect x="10" y="10" width="300" height="160" rx="17" fill="none" stroke="#10141f" stroke-opacity=".18" stroke-width="2"/>
+  
+  <path d="M0 132 C54 98 88 112 128 82 C170 50 207 68 320 36 L320 180 L0 180 Z" fill="#abc0c4" opacity=".58"/>
+  <path d="M22 126 C70 42 111 148 159 48 C190 -16 237 85 295 22" fill="none" stroke="#93efff" stroke-width="16" stroke-linecap="round" opacity=".72" filter="url(#soft-main)"/>
+  <path d="M16 112 C76 76 113 108 159 64 C211 13 248 67 306 34" fill="none" stroke="#d1f8ff" stroke-width="6" stroke-linecap="round" opacity=".82"/>
+  <circle cx="48" cy="36" r="2" fill="#fff" opacity=".8"/>
+  <circle cx="252" cy="56" r="1.8" fill="#fff" opacity=".68"/>
+  <circle cx="226" cy="27" r="1.2" fill="#fff" opacity=".78"/>
+</svg>

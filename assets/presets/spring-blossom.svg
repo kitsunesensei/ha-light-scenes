@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Spring blossom</title>
+  <desc id="desc">Preset artwork using the Spring blossom color palette.</desc>
+  
+  <defs>
+    <linearGradient id="bg-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7bcc9"/><stop offset="25%" stop-color="#ff8ac4"/><stop offset="50%" stop-color="#ffa9cd"/><stop offset="75%" stop-color="#ff635e"/><stop offset="100%" stop-color="#ff489b"/>
+    </linearGradient>
+    <radialGradient id="glow-main" cx="78%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#ffd0e4" stop-opacity=".72"/>
+      <stop offset="62%" stop-color="#ff8ac4" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#f7bcc9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-main" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="320" height="180" rx="22" fill="url(#bg-main)"/>
+  <rect width="320" height="180" rx="22" fill="url(#glow-main)"/>
+  <rect x="10" y="10" width="300" height="160" rx="17" fill="none" stroke="#10141f" stroke-opacity=".18" stroke-width="2"/>
+  
+  <ellipse cx="160" cy="84" rx="18" ry="48" fill="#f7bcc9" opacity=".62" transform="rotate(0 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#ff8ac4" opacity=".62" transform="rotate(30 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#ffa9cd" opacity=".62" transform="rotate(60 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#ff635e" opacity=".62" transform="rotate(90 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#ff489b" opacity=".62" transform="rotate(120 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#f7bcc9" opacity=".62" transform="rotate(150 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#ff8ac4" opacity=".62" transform="rotate(180 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#ffa9cd" opacity=".62" transform="rotate(210 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#ff635e" opacity=".62" transform="rotate(240 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#ff489b" opacity=".62" transform="rotate(270 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#f7bcc9" opacity=".62" transform="rotate(300 160 100)"/><ellipse cx="160" cy="84" rx="18" ry="48" fill="#ff8ac4" opacity=".62" transform="rotate(330 160 100)"/>
+  <circle cx="160" cy="100" r="30" fill="#ffc6de" opacity=".9"/>
+  <path d="M158 126 C150 145 132 154 104 158" fill="none" stroke="#d1514d" stroke-width="7" stroke-linecap="round"/>
+  <path d="M124 147 C108 128 87 127 66 142 C90 147 105 158 124 147 Z" fill="#ff8ac4" opacity=".65"/>
+  <circle cx="160" cy="100" r="10" fill="#ffb2d5"/>
+</svg>

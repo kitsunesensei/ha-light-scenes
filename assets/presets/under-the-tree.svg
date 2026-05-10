@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Under the tree</title>
+  <desc id="desc">Preset artwork using the Under the tree color palette.</desc>
+  
+  <defs>
+    <linearGradient id="bg-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff0000"/><stop offset="25%" stop-color="#00ce77"/><stop offset="50%" stop-color="#00d428"/><stop offset="75%" stop-color="#ef9600"/><stop offset="100%" stop-color="#ff6e4e"/>
+    </linearGradient>
+    <radialGradient id="glow-main" cx="78%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#73e789" stop-opacity=".72"/>
+      <stop offset="62%" stop-color="#00ce77" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-main" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="320" height="180" rx="22" fill="url(#bg-main)"/>
+  <rect width="320" height="180" rx="22" fill="url(#glow-main)"/>
+  <rect x="10" y="10" width="300" height="160" rx="17" fill="none" stroke="#f8fbff" stroke-opacity=".18" stroke-width="2"/>
+  
+  <path d="M160 30 L98 132 H222 Z" fill="#00a55f" opacity=".8"/>
+  <path d="M160 58 L83 154 H237 Z" fill="#00bb23" opacity=".72"/>
+  <rect x="147" y="139" width="26" height="28" rx="4" fill="#990000" opacity=".7"/>
+  <path d="M160 31 L166 45 L181 45 L169 54 L174 69 L160 60 L146 69 L151 54 L139 45 L154 45 Z" fill="#f4ba57"/>
+  <circle cx="137" cy="96" r="5" fill="#ff6e4e"/>
+  <circle cx="182" cy="111" r="5" fill="#ff0000"/>
+  <circle cx="160" cy="128" r="5" fill="#5ce375"/>
+  <path d="M58 45 H88 M232 52 H264 M48 126 H83 M237 139 H286" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".52"/>
+</svg>

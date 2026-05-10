@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Light Cycles</title>
+  <desc id="desc">Preset artwork using the Light Cycles color palette.</desc>
+  
+  <defs>
+    <linearGradient id="bg-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff4d00"/><stop offset="100%" stop-color="#00d4ec"/>
+    </linearGradient>
+    <radialGradient id="glow-main" cx="78%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#ff9d73" stop-opacity=".72"/>
+      <stop offset="62%" stop-color="#00d4ec" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-main" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="320" height="180" rx="22" fill="url(#bg-main)"/>
+  <rect width="320" height="180" rx="22" fill="url(#glow-main)"/>
+  <rect x="10" y="10" width="300" height="160" rx="17" fill="none" stroke="#f8fbff" stroke-opacity=".18" stroke-width="2"/>
+  
+  <path d="M18 28 H302" stroke="#ff4d00" stroke-width="4" opacity=".52"/><path d="M22 43 H299" stroke="#00d4ec" stroke-width="2" opacity=".52"/><path d="M26 58 H296" stroke="#ff4d00" stroke-width="2" opacity=".52"/><path d="M30 73 H293" stroke="#00d4ec" stroke-width="4" opacity=".52"/><path d="M34 88 H290" stroke="#ff4d00" stroke-width="2" opacity=".52"/><path d="M38 103 H287" stroke="#00d4ec" stroke-width="2" opacity=".52"/><path d="M42 118 H284" stroke="#ff4d00" stroke-width="4" opacity=".52"/><path d="M46 133 H281" stroke="#00d4ec" stroke-width="2" opacity=".52"/><path d="M50 148 H278" stroke="#ff4d00" stroke-width="2" opacity=".52"/>
+  <path d="M32 138 H92 L116 111 H164 L188 82 H288" fill="none" stroke="#ff824d" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" opacity=".82"/>
+  <path d="M48 52 H118 L145 77 H204 L236 44 H282" fill="none" stroke="#00d4ec" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" opacity=".78"/>
+  <rect x="122" y="88" width="76" height="46" rx="8" fill="#9e3000" opacity=".72"/>
+  <rect x="137" y="103" width="46" height="16" rx="3" fill="#ff7f47" opacity=".82"/>
+</svg>

@@ -13,6 +13,7 @@
     "prepare": "husky",
     "prebuild": "rimraf dist",
     "build": "npx tsx scripts/generate-presets.ts",
+    "generate:graphics": "npx tsx scripts/generate-preset-graphics.ts",
     "release": "node --import tsx ./node_modules/semantic-release/bin/semantic-release.js"
   },
   "lint-staged": {

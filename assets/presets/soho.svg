@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Soho</title>
+  <desc id="desc">Preset artwork using the Soho color palette.</desc>
+  
+  <defs>
+    <linearGradient id="bg-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff3579"/><stop offset="25%" stop-color="#ff005a"/><stop offset="50%" stop-color="#00f4c8"/><stop offset="75%" stop-color="#ff7652"/><stop offset="100%" stop-color="#9d00ff"/>
+    </linearGradient>
+    <radialGradient id="glow-main" cx="78%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#73f9e1" stop-opacity=".72"/>
+      <stop offset="62%" stop-color="#ff005a" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#ff3579" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-main" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="320" height="180" rx="22" fill="url(#bg-main)"/>
+  <rect width="320" height="180" rx="22" fill="url(#glow-main)"/>
+  <rect x="10" y="10" width="300" height="160" rx="17" fill="none" stroke="#f8fbff" stroke-opacity=".18" stroke-width="2"/>
+  
+  <path d="M0 138 L38 114 L74 130 L108 86 L146 117 L192 70 L238 110 L320 82 L320 180 L0 180 Z" fill="#9e214b" opacity=".62"/>
+  <rect x="32" y="76" width="34" height="104" rx="3" fill="#9e0038" opacity=".78"/>
+  <rect x="86" y="54" width="44" height="126" rx="3" fill="#008970" opacity=".8"/>
+  <rect x="152" y="88" width="38" height="92" rx="3" fill="#b32555" opacity=".82"/>
+  <rect x="214" y="60" width="50" height="120" rx="3" fill="#8c412d" opacity=".78"/>
+  <rect x="30" y="92" width="5" height="8" rx="1.5" fill="#00f4c8" opacity=".74"/><rect x="42" y="111" width="5" height="8" rx="1.5" fill="#ff7652" opacity=".74"/><rect x="54" y="130" width="5" height="8" rx="1.5" fill="#9d00ff" opacity=".74"/><rect x="66" y="97" width="5" height="8" rx="1.5" fill="#ff3579" opacity=".74"/><rect x="78" y="116" width="5" height="8" rx="1.5" fill="#ff005a" opacity=".74"/><rect x="90" y="135" width="5" height="8" rx="1.5" fill="#00f4c8" opacity=".74"/><rect x="102" y="102" width="5" height="8" rx="1.5" fill="#ff7652" opacity=".74"/><rect x="114" y="121" width="5" height="8" rx="1.5" fill="#9d00ff" opacity=".74"/><rect x="126" y="140" width="5" height="8" rx="1.5" fill="#ff3579" opacity=".74"/><rect x="138" y="107" width="5" height="8" rx="1.5" fill="#ff005a" opacity=".74"/><rect x="150" y="126" width="5" height="8" rx="1.5" fill="#00f4c8" opacity=".74"/><rect x="162" y="93" width="5" height="8" rx="1.5" fill="#ff7652" opacity=".74"/><rect x="174" y="112" width="5" height="8" rx="1.5" fill="#9d00ff" opacity=".74"/><rect x="186" y="131" width="5" height="8" rx="1.5" fill="#ff3579" opacity=".74"/><rect x="198" y="98" width="5" height="8" rx="1.5" fill="#ff005a" opacity=".74"/><rect x="210" y="117" width="5" height="8" rx="1.5" fill="#00f4c8" opacity=".74"/><rect x="222" y="136" width="5" height="8" rx="1.5" fill="#ff7652" opacity=".74"/><rect x="234" y="103" width="5" height="8" rx="1.5" fill="#9d00ff" opacity=".74"/><rect x="246" y="122" width="5" height="8" rx="1.5" fill="#ff3579" opacity=".74"/><rect x="258" y="141" width="5" height="8" rx="1.5" fill="#ff005a" opacity=".74"/><rect x="270" y="108" width="5" height="8" rx="1.5" fill="#00f4c8" opacity=".74"/><rect x="282" y="127" width="5" height="8" rx="1.5" fill="#ff7652" opacity=".74"/>
+  <path d="M0 146 C72 130 142 161 218 139 C260 127 292 129 320 137 L320 180 L0 180 Z" fill="#8400d6" opacity=".75"/>
+</svg>

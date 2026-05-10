@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Promise</title>
+  <desc id="desc">Preset artwork using the Promise color palette.</desc>
+  
+  <defs>
+    <linearGradient id="bg-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00b6ff"/><stop offset="25%" stop-color="#ff5966"/><stop offset="50%" stop-color="#d777ff"/><stop offset="75%" stop-color="#91cb87"/><stop offset="100%" stop-color="#ff8369"/>
+    </linearGradient>
+    <radialGradient id="glow-main" cx="78%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#e9b4ff" stop-opacity=".72"/>
+      <stop offset="62%" stop-color="#ff5966" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#00b6ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-main" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="320" height="180" rx="22" fill="url(#bg-main)"/>
+  <rect width="320" height="180" rx="22" fill="url(#glow-main)"/>
+  <rect x="10" y="10" width="300" height="160" rx="17" fill="none" stroke="#f8fbff" stroke-opacity=".18" stroke-width="2"/>
+  
+  <path d="M161 137 C115 109 84 87 91 58 C96 37 123 35 160 68 C197 35 224 37 229 58 C236 87 207 109 161 137 Z" fill="#ff6d78" opacity=".9"/>
+  <path d="M161 124 C127 102 107 84 112 65 C116 52 135 52 160 75 C185 52 204 52 208 65 C213 84 193 102 161 124 Z" fill="#91cb87" opacity=".72"/>
+  <circle cx="78" cy="52" r="6" fill="#e9b3ff" opacity=".76"/>
+  <circle cx="251" cy="116" r="8" fill="#ffad9c" opacity=".72"/>
+  <path d="M68 126 C96 112 115 129 137 112" fill="none" stroke="#42c9ff" stroke-width="5" stroke-linecap="round" opacity=".62"/>
+</svg>
